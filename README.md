@@ -1,12 +1,6 @@
-## 🧬 Computational Biology & Bioinformatics Portfolio
-
-An interactive, high-performance web portfolio showcasing advanced computational workflows...
-
 # Personal Portfolio | Abeera Iftikhar
 
 An interactive, high-performance web portfolio showcasing advanced computational workflows, automated bioinformatics pipelines, and full-stack scientific data processing infrastructure.
-
-🔗 **Live Website:
 
 ---
 
@@ -32,5 +26,5 @@ I am a computational researcher, biotechnology graduate, Silver Medalist, and th
 - Quantitative material yields verification via NanoDrop Spectrophotometry.
 - Gel Electrophoresis, microbial isolation, and manufacturing compliance validation (sterility tracking matrices).
 
-🌐 Live: https:
+🌐 Live: https:https://abeeraiftikhar.github.io/my-portfolio/
 📧 iftikharabeera100@gmail.com
