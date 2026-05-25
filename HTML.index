@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abeera Iftikhar | Founder of Biocode Innovators & AI Researcher</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        mono: ['Space Grotesk', 'sans-serif'],
+                    },
+                    colors: {
+                        obsidianDark: '#080A10',
+                        charcoalCard: 'rgba(20, 26, 38, 0.6)',
+                        matrixGreen: '#10B981',
+                        emeraldCore: '#059669',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glow-matrix:hover {
+            box-shadow: 0 0 25px rgba(16, 185, 129, 0.25);
+            border-color: rgba(16, 185, 129, 0.6);
+        }
+        .glass-charcoal {
+            background: rgba(17, 24, 39, 0.7);
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+            border: 1px solid rgba(255, 255, 255, 0.04);
+        }
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #080A10; }
+        ::-webkit-scrollbar-thumb { background: #182235; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #10B981; }
+    </style>
+</head>
+<body class="bg-obsidianDark text-slate-300 font-sans selection:bg-matrixGreen selection:text-obsidianDark overflow-x-hidden">
+
+    <div class="absolute top-0 left-1/3 w-[600px] h-[600px] bg-matrixGreen/5 rounded-full blur-[140px] pointer-events-none -z-10"></div>
+    <div class="absolute top-[150vh] right-1/4 w-[500px] h-[500px] bg-emeraldCore/5 rounded-full blur-[130px] pointer-events-none -z-10"></div>
+
+    <header class="fixed top-0 left-0 w-full z-50 glass-charcoal border-b border-white/5">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="font-mono text-xl font-bold tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-matrixGreen to-white">
+                &lt;ABEERA.BIOMED&gt;
+            </a>
+            <nav class="hidden lg:flex items-center space-x-7 font-mono text-xs tracking-wide">
+                <a href="#about" class="hover:text-matrixGreen transition-colors">About</a>
+                <a href="#skills" class="hover:text-matrixGreen transition-colors">Expertise</a>
+                <a href="#projects" class="hover:text-matrixGreen transition-colors">Projects</a>
+                <a href="#experience" class="hover:text-matrixGreen transition-colors">Experience</a>
+                <a href="#education" class="hover:text-matrixGreen transition-colors">Education</a>
+                <a href="#awards" class="hover:text-matrixGreen transition-colors">Awards</a>
+                <a href="#contact" class="px-3 py-1.5 border border-matrixGreen/40 rounded text-matrixGreen hover:bg-matrixGreen/5 transition-all duration-300">Contact</a>
+            </nav>
+            <button class="lg:hidden text-2xl text-matrixGreen" onclick="toggleMobileMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden lg:hidden absolute top-20 left-0 w-full glass-charcoal flex flex-col p-6 space-y-4 font-mono border-b border-white/10">
+            <a href="#about" onclick="toggleMobileMenu()" class="hover:text-matrixGreen">About</a>
+            <a href="#skills" onclick="toggleMobileMenu()" class="hover:text-matrixGreen">Expertise</a>
+            <a href="#projects" onclick="toggleMobileMenu()" class="hover:text-matrixGreen">Projects</a>
+            <a href="#experience" onclick="toggleMobileMenu()" class="hover:text-matrixGreen">Experience</a>
+            <a href="#education" onclick="toggleMobileMenu()" class="hover:text-matrixGreen">Education</a>
+            <a href="#awards" onclick="toggleMobileMenu()" class="hover:text-matrixGreen">Awards</a>
+            <a href="#contact" onclick="toggleMobileMenu()" class="text-matrixGreen">Contact</a>
+        </div>
+    </header>
+
+    <section id="hero" class="min-h-screen flex items-center pt-20 relative">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center w-full">
+            <div class="lg:col-span-7 space-y-6 z-10">
+                <div class="inline-flex items-center space-x-2 px-3 py-1 rounded bg-matrixGreen/10 border border-matrixGreen/20 text-matrixGreen font-mono text-xs tracking-wider">
+                    <span class="w-1.5 h-1.5 rounded-full bg-matrixGreen animate-ping"></span>
+                    <span>FOUNDER // BIOC_INNOVATORS</span>
+                </div>
+                <h1 class="font-mono text-4xl sm:text-6xl font-bold tracking-tight text-white leading-tight">
+                    Architecting the Future of <span class="text-transparent bg-clip-text bg-gradient-to-r from-matrixGreen via-emerald-400 to-slate-200">Bioinformatics</span>
+                </h1>
+                <p class="text-lg font-mono text-slate-400 max-w-xl">
+                    &gt; Advancing Research Through Computational Innovation.
+                </p>
+                <p class="text-slate-400 max-w-xl text-base leading-relaxed font-sans">
+                    Abeera Iftikhar is an aspiring bioinformatician and computational researcher passionate about transforming biological data into meaningful scientific discoveries. As the founder of **Biocode Innovators**, her work bridges biotechnology and intelligent systems to advance precision science.
+                </p>
+                <div class="flex flex-wrap gap-4 pt-4 font-mono text-xs">
+                    <a href="#projects" class="px-6 py-3 bg-matrixGreen text-obsidianDark font-bold rounded shadow-lg shadow-matrixGreen/10 hover:bg-emeraldCore transition-colors duration-300">
+                        View Research Projects
+                    </a>
+                    <a href="#contact" class="px-6 py-3 border border-white/10 rounded text-slate-400 hover:text-white hover:border-matrixGreen transition-all duration-300">
+                        Get In Touch
+                    </a>
+                </div>
+            </div>
+            
+            <div class="lg:col-span-5 flex justify-center items-center relative h-[420px]">
+                <div class="glass-charcoal p-8 rounded-xl border border-white/5 w-full max-w-md relative shadow-2xl">
+                    <div class="flex items-center justify-between border-b border-white/5 pb-4 mb-6 font-mono text-xs text-slate-500">
+                        <span>SYSTEM STATUS // ONLINE</span>
+                        <span>FAISALABAD, PK</span>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex items-center space-x-4">
+                            <div class="w-14 h-14 rounded bg-gradient-to-br from-matrixGreen to-emeraldCore flex items-center justify-center text-obsidianDark text-2xl font-bold">
+                                <i class="fa-solid fa-terminal"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-md font-bold font-mono text-white tracking-wide">Abeera Iftikhar</h3>
+                                <p class="text-xs font-mono text-matrixGreen">BIOINFORMATICS RESEARCH</p>
+                            </div>
+                        </div>
+                        <div class="border-t border-white/5 pt-4 space-y-2 font-mono text-[11px]">
+                            <p class="text-slate-400"><b class="text-slate-300">Platform:</b> Biocode Innovators (Founder)</p>
+                            <p class="text-slate-400"><b class="text-slate-300">Frameworks:</b> Python Pipeline Architectures</p>
+                            <p class="text-slate-400"><b class="text-slate-300">Bio_Index:</b> Transcriptomics & Structural Analytics</p>
+                            <p class="text-slate-400"><b class="text-slate-300">Academic CGPA:</b> 3.95 / 4.00</p>
+                        </div>
+                        <div class="bg-black/60 font-mono text-[11px] p-4 rounded border border-white/5 text-matrixGreen/90 h-28 overflow-hidden leading-relaxed">
+                            &gt; automated_docking_pipeline.py ... RUNNING<br>
+                            &gt; screening natural compounds vs BCL-2... OK<br>
+                            &gt; structure predicted with AlphaFold3... OK<br>
+                            &gt; matrix arrays synced. terminal clear.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-24 border-t border-white/5 bg-black/20">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+                <div class="lg:col-span-5 space-y-3">
+                    <h2 class="font-mono text-xs uppercase text-matrixGreen tracking-widest">// PROFILE_OVERVIEW</h2>
+                    <p class="font-mono text-2xl font-bold text-white">In Silico Mapping & Wet-Lab Validation</p>
+                </div>
+                <div class="lg:col-span-7 space-y-5 text-slate-400 leading-relaxed text-sm font-sans">
+                    <p>
+                        With a deep core knowledge platform built in biotechnology coupled with advanced algorithmic applications in structural drug design, pangenomics profiling, and molecular modeling, I process massive arrays of multi-variant data to isolate high-value scientific insight.
+                    </p>
+                    <p>
+                        My structural design pipeline spans from programming direct programmatic workflows in Python or R, downstream to validating physical matrices under strict sterile laboratory setups.
+                    </p>
+                    <div class="glass-charcoal p-5 rounded border-l-2 border-l-matrixGreen border-y-white/5 border-r-white/5 mt-4">
+                        <h4 class="font-mono font-bold text-white text-xs mb-1"><i class="fa-solid fa-circle-nodes text-matrixGreen mr-2"></i> The Biocode Innovators Hub</h4>
+                        <p class="text-xs text-slate-400">
+                            Founded as a dedicated knowledge network to build interactive pipeline tool designs, clear documentation guidelines, and mentorship opportunities for biological data processing professionals.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-24 border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="max-w-xl mb-16 space-y-3">
+                <h2 class="font-mono text-xs uppercase text-matrixGreen tracking-widest">// CORE_COMPETENCIES</h2>
+                <p class="font-mono text-2xl font-bold text-white">Technical Expertise & Capabilities</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="glass-charcoal p-6 rounded hover:border-matrixGreen/30 transition-colors duration-300">
+                    <div class="flex items-center space-x-3 mb-4 text-matrixGreen">
+                        <i class="fa-solid fa-dna text-lg"></i>
+                        <h3 class="font-mono font-bold text-white text-sm">Bioinformatics & Computational Biology</h3>
+                    </div>
+                    <ul class="space-y-2 font-mono text-xs text-slate-400">
+                        <li><span class="text-matrixGreen">//</span> Genomics & Functional Transcriptomics</li>
+                        <li><span class="text-matrixGreen">//</span> Sequence Alignment & Annotation Pipelines</li>
+                        <li><span class="text-matrixGreen">//</span> Pangenome Profiling & Phylogenetics</li>
+                        <li><span class="text-matrixGreen">//</span> Molecular Docking & Interaction Matrices</li>
+                        <li><span class="text-matrixGreen">//</span> Structure-Based Analytical Drug Design</li>
+                        <li><span class="text-matrixGreen">//</span> In Silico Processing & Cluster Simulations</li>
+                    </ul>
+                </div>
+
+                <div class="glass-charcoal p-6 rounded hover:border-matrixGreen/30 transition-colors duration-300">
+                    <div class="flex items-center space-x-3 mb-4 text-matrixGreen">
+                        <i class="fa-solid fa-terminal text-lg"></i>
+                        <h3 class="font-mono font-bold text-white text-sm">Programming, AI & Data Science</h3>
+                    </div>
+                    <ul class="space-y-2 font-mono text-xs text-slate-400">
+                        <li><span class="text-matrixGreen">//</span> Python Automated Pipeline Scripting</li>
+                        <li><span class="text-matrixGreen">//</span> Machine Learning & Curation Networks</li>
+                        <li><span class="text-matrixGreen">//</span> Complex Scientific Data Visualization</li>
+                        <li><span class="text-matrixGreen">//</span> Git & Collaborative Repository Control</li>
+                        <li><span class="text-matrixGreen">//</span> Automated Cloud Deployment Workflows</li>
+                        <li><span class="text-matrixGreen">//</span> Intelligent Data Index Systems</li>
+                    </ul>
+                </div>
+
+                <div class="glass-charcoal p-6 rounded hover:border-matrixGreen/30 transition-colors duration-300">
+                    <div class="flex items-center space-x-3 mb-4 text-slate-400">
+                        <i class="fa-solid fa-flask text-lg text-emerald-500"></i>
+                        <h3 class="font-mono font-bold text-white text-sm">Biotechnology & Wet-Lab</h3>
+                    </div>
+                    <ul class="space-y-2 font-mono text-xs text-slate-400">
+                        <li><span class="text-matrixGreen">//</span> DNA Extraction (CTAB Protocol Standard)</li>
+                        <li><span class="text-matrixGreen">//</span> NanoDrop Spectrophotometer Analysis</li>
+                        <li><span class="text-matrixGreen">//</span> Thermal Cycler PCR & Gel Electrophoresis</li>
+                        <li><span class="text-matrixGreen">//</span> Agrobacterium-Mediated Vector Shifting</li>
+                        <li><span class="text-matrixGreen">//</span> Microbial Isolation, Culturing & Susceptibility</li>
+                        <li><span class="text-matrixGreen">//</span> Laboratory Validation Documentation</li>
+                    </ul>
+                </div>
+
+                <div class="glass-charcoal p-6 rounded hover:border-matrixGreen/30 transition-colors duration-300">
+                    <div class="flex items-center space-x-3 mb-4 text-slate-400">
+                        <i class="fa-solid fa-file-invoice text-lg text-matrixGreen"></i>
+                        <h3 class="font-mono font-bold text-white text-sm">Research & Scientific Curation</h3>
+                    </div>
+                    <ul class="space-y-2 font-mono text-xs text-slate-400">
+                        <li><span class="text-matrixGreen">//</span> Advanced Scientific Document Writing</li>
+                        <li><span class="text-matrixGreen">//</span> Critical Literary Database Analysis</li>
+                        <li><span class="text-matrixGreen">//</span> Technical Research Reports Mapping</li>
+                        <li><span class="text-matrixGreen">//</span> Complex Bio-Problem Solving Logics</li>
+                    </ul>
+                </div>
+
+                <div class="glass-charcoal p-6 rounded hover:border-matrixGreen/30 transition-colors duration-300">
+                    <div class="flex items-center space-x-3 mb-4 text-slate-400">
+                        <i class="fa-solid fa-chart-line text-lg text-matrixGreen"></i>
+                        <h3 class="font-mono font-bold text-white text-sm">Digital Assets & Presentation</h3>
+                    </div>
+                    <ul class="space-y-2 font-mono text-xs text-slate-400">
+                        <li><span class="text-matrixGreen">//</span> Vector Graphics Layout & Infographics</li>
+                        <li><span class="text-matrixGreen">//</span> Interactive Dashboard Infrastructure</li>
+                        <li><span class="text-matrixGreen">//</span> Digital Collaborative Frameworks</li>
+                        <li><span class="text-matrixGreen">//</span> High-Impact Presentation Engineering</li>
+                    </ul>
+                </div>
+
+                <div class="glass-charcoal p-6 rounded border border-matrixGreen/20 bg-gradient-to-b from-obsidianDark to-matrixGreen/5 flex flex-col justify-between relative group">
+                    <div>
+                        <div class="flex items-center space-x-2 text-matrixGreen font-mono text-[10px] tracking-wider mb-2">
+                            <i class="fa-solid fa-circle-nodes"></i>
+                            <span>PUBLICATIONS</span>
+                        </div>
+                        <h4 class="text-xs font-bold text-white line-clamp-3 mb-2 font-mono">
+                            "In Silico-Driven Identification of Epigallocatechin Gallate and Berberine as Novel Candidates to Overcome Salmonella Antibiotic Resistance..."
+                        </h4>
+                        <p class="text-[10px] text-slate-500 font-mono">Registry: JIRAP Journal Vector</p>
+                    </div>
+                    <a href="https://jirap.ubas.edu.pk/index.php/jirap/index" target="_blank" class="mt-4 inline-flex items-center text-xs font-mono text-matrixGreen hover:underline">
+                        View Article Publication <i class="fa-solid fa-arrow-up-right-from-square ml-1 text-[10px]"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-24 border-t border-white/5 bg-black/10">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-4">
+                <div class="space-y-3">
+                    <h2 class="font-mono text-xs uppercase text-matrixGreen tracking-widest">// PORTFOLIO_PROJECTS</h2>
+                    <p class="font-mono text-2xl font-bold text-white">Selected Research & Software Modules</p>
+                </div>
+                <a href="https://github.com/Abeeraiftikhar" target="_blank" class="font-mono text-xs text-matrixGreen hover:underline flex items-center space-x-1">
+                    <span>Explore All Repositories</span> <i class="fa-solid fa-angle-right text-[11px]"></i>
+                </a>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <div class="glass-charcoal p-6 rounded border border-white/5 group glow-matrix transition-all duration-300 flex flex-col justify-between md:col-span-2 lg:col-span-3">
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+                        <div class="lg:col-span-8 space-y-3">
+                            <div class="inline-block px-2 py-0.5 bg-matrixGreen/10 border border-matrixGreen/20 text-matrixGreen text-[10px] font-mono rounded">
+                                WEB UTILITY // GENOMICS
+                            </div>
+                            <h3 class="text-xl font-mono font-bold text-white group-hover:text-matrixGreen transition-colors">MultiFASTA-GC-Analyzer</h3>
+                            <p class="text-xs text-slate-400 leading-relaxed font-sans">
+                                A high-performance genomic sequence web utility constructed on Streamlit allowing practitioners to batch-process sequence files. Automates complex evaluation algorithms for raw target strands, rendering real-time content matrices and compiled data distributions inside professional publication-ready PDF formats.
+                            </p>
+                            <div class="flex flex-wrap gap-2 pt-2 text-[10px] font-mono text-slate-400">
+                                <span class="bg-white/5 px-2 py-0.5 rounded">Python Engine</span>
+                                <span class="bg-white/5 px-2 py-0.5 rounded">Streamlit Core</span>
+                                <span class="bg-white/5 px-2 py-0.5 rounded">Biopython IO</span>
+                                <span class="bg-white/5 px-2 py-0.5 rounded">Matplotlib Array</span>
+                            </div>
+                        </div>
+                        <div class="lg:col-span-4 bg-black/40 p-4 rounded border border-white/5 flex flex-col justify-between text-[11px] font-mono">
+                            <div class="space-y-1.5 text-slate-400">
+                                <p class="text-matrixGreen font-bold text-[10px]">// CORE FEATURES</p>
+                                <p>• Processes massive input structures up to 200MB.</p>
+                                <p>• Exports immediate vectorized GC charts & reports.</p>
+                            </div>
+                            <a href="https://github.com/Abeeraiftikhar/MultiFASTA-GC-Analyzer" target="_blank" class="text-matrixGreen hover:underline text-xs block mt-4"><i class="fa-brands fa-github mr-1"></i> View Repository</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-charcoal p-6 rounded border border-white/5 group glow-matrix transition-all duration-300 flex flex-col justify-between">
+                    <div class="space-y-3">
+                        <div class="text-[10px] font-mono text-matrixGreen">PIPELINE ARCHITECTURE</div>
+                        <h3 class="text-md font-mono font-bold text-white group-hover:text-matrixGreen transition-colors">Automated-Docking-Python-Pipeline</h3>
+                        <p class="text-xs text-slate-400 leading-relaxed">
+                            An end-to-end orchestration workflow script designed to automate high-throughput drug screening modules. Coordinates structural file preparation, binding box setup coordinates, docking configurations, and score classification arrays automatically.
+                        </p>
+                    </div>
+                    <div class="pt-4 mt-4 border-t border-white/5 flex items-center justify-between font-mono text-[10px]">
+                        <span class="text-slate-500">Python, Bash scripting</span>
+                        <a href="https://github.com/Abeeraiftikhar" target="_blank" class="text-matrixGreen hover:underline"><i class="fa-brands fa-github"></i> Source</a>
+                    </div>
+                </div>
+
+                <div class="glass-charcoal p-6 rounded border border-white/5 group glow-matrix transition-all duration-300 flex flex-col justify-between">
+                    <div class="space-y-3">
+                        <div class="text-[10px] font-mono text-matrixGreen">STRUCTURAL BIOINFORMATICS</div>
+                        <h3 class="text-md font-mono font-bold text-white group-hover:text-matrixGreen transition-colors">Applied-Bioinformatics-Structural-Analysis</h3>
+                        <p class="text-xs text-slate-400 leading-relaxed">
+                            Practical, high-resolution Structural Bioinformatics framework integrating target sequence profile exploration, molecular crystal prediction algorithms, iterative structure refinement grids, and computational confirmation validation tasks.
+                        </p>
+                    </div>
+                    <div class="pt-4 mt-4 border-t border-white/5 flex items-center justify-between font-mono text-[10px]">
+                        <span class="text-slate-500">Structural IO, Gnuplot</span>
+                        <a href="https://github.com/Abeeraiftikhar/Applied-Bioinformatics-Structural-Analysis" target="_blank" class="text-matrixGreen hover:underline"><i class="fa-brands fa-github"></i> Source</a>
+                    </div>
+                </div>
+
+                <div class="glass-charcoal p-6 rounded border border-white/5 group glow-matrix transition-all duration-300 flex flex-col justify-between">
+                    <div class="space-y-3">
+                        <div class="text-[10px] font-mono text-matrixGreen">VIRTUAL SCREENING</div>
+                        <h3 class="text-md font-mono font-bold text-white group-hover:text-matrixGreen transition-colors">BCL2-natural-compounds-docking</h3>
+                        <p class="text-xs text-slate-400 leading-relaxed">
+                            Virtual processing screening infrastructure map querying structural natural compound collections against anti-apoptotic BCL-2 targets. Tracks exact alignment trajectories and binding thresholds to speed up development schedules.
+                        </p>
+                    </div>
+                    <div class="pt-4 mt-4 border-t border-white/5 flex items-center justify-between font-mono text-[10px]">
+                        <span class="text-slate-500">AutoDock, PyMOL Engine</span>
+                        <a href="https://github.com/Abeeraiftikhar/BCL2-natural-compounds-docking" target="_blank" class="text-matrixGreen hover:underline"><i class="fa-brands fa-github"></i> Source</a>
+                    </div>
+                </div>
+
+                <div class="glass-charcoal p-6 rounded border border-white/5 group glow-matrix transition-all duration-300 flex flex-col justify-between">
+                    <div class="space-y-3">
+                        <div class="text-[10px] font-mono text-matrixGreen">TRANSCRIPTOMICS</div>
+                        <h3 class="text-md font-mono font-bold text-white group-hover:text-matrixGreen transition-colors">GSE147334_TEX10_CRC_Analysis</h3>
+                        <p class="text-xs text-slate-400 leading-relaxed">
+                            Differential transcription computing array analyzing raw data from dataset GSE147334 to evaluate the systemic effects of TEX10 knockdown trends across human colorectal cancer models. Incorporates gene filter arrays and GEO2R processing.
+                        </p>
+                    </div>
+                    <div class="pt-4 mt-4 border-t border-white/5 flex items-center justify-between font-mono text-[10px]">
+                        <span class="text-slate-500">R Matrix, DAVID core</span>
+                        <a href="https://github.com/Abeeraiftikhar/GSE147334_TEX10_CRC_Analysis" target="_blank" class="text-matrixGreen hover:underline"><i class="fa-brands fa-github"></i> Source</a>
+                    </div>
+                </div>
+
+                <div class="glass-charcoal p-6 rounded border border-white/5 group glow-matrix transition-all duration-300 flex flex-col justify-between">
+                    <div class="space-y-3">
+                        <div class="text-[10px] font-mono text-matrixGreen">CHEMINFORMATICS</div>
+                        <h3 class="text-md font-mono font-bold text-white group-hover:text-matrixGreen transition-colors">QSAR-ChEMBL-BRCA1-Pipeline</h3>
+                        <p class="text-xs text-slate-400 leading-relaxed">
+                            Programmatic query engine scraping raw target biological data from ChEMBL connectors for BRCA1 targets. Cleans and structures raw IC50 distributions into machine-learning compatible sets for deep analytical classification.
+                        </p>
+                    </div>
+                    <div class="pt-4 mt-4 border-t border-white/5 flex items-center justify-between font-mono text-[10px]">
+                        <span class="text-slate-500">ChEMBL API, RDKit, Pandas</span>
+                        <a href="https://github.com/Abeeraiftikhar/QSAR-ChEMBL-BRCA1-Pipeline" target="_blank" class="text-matrixGreen hover:underline"><i class="fa-brands fa-github"></i> Source</a>
+                    </div>
+                </div>
+
+                <div class="glass-charcoal p-6 rounded border border-white/5 group glow-matrix transition-all duration-300 flex flex-col justify-between">
+                    <div class="space-y-3">
+                        <div class="text-[10px] font-mono text-matrixGreen">INTELLIGENT SYSTEMS</div>
+                        <h3 class="text-md font-mono font-bold text-white group-hover:text-matrixGreen transition-colors">Abeera-BioAI Chatbot</h3>
+                        <p class="text-xs text-slate-400 leading-relaxed">
+                            Specialized computational conversational interface system mapping LLM query parsers directly onto genomics information tables, simplifying the breakdown of complex biological engineering matrices.
+                        </p>
+                    </div>
+                    <div class="pt-4 mt-4 border-t border-white/5 flex items-center justify-between font-mono text-[10px]">
+                        <span class="text-slate-500">Groq API, Gradio Workspace</span>
+                        <a href="https://github.com/Abeeraiftikhar/Abeera-BioAI" target="_blank" class="text-matrixGreen hover:underline"><i class="fa-brands fa-github"></i> Source</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="py-24 border-t border-white/5 bg-black/5">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="mb-16 space-y-3 text-center">
+                <h2 class="font-mono text-xs uppercase text-matrixGreen tracking-widest">// PROFESSIONAL_HISTORY</h2>
+                <p class="font-mono text-2xl font-bold text-white">Experience Chronology</p>
+            </div>
+
+            <div class="relative border-l border-white/10 pl-8 ml-4 space-y-12 font-mono text-xs">
+                
+                <div class="relative">
+                    <span class="absolute -left-[39px] top-0.5 w-4 h-4 bg-matrixGreen rounded-full border-4 border-obsidianDark"></span>
+                    <div class="flex justify-between items-center text-[10px] text-slate-500 mb-1">
+                        <span>FREELANCE DEV PLATFORM</span>
+                        <span>07/2025 - 08/2025</span>
+                    </div>
+                    <h3 class="text-base font-bold text-white font-mono">Freelance Bubble — Bioinformatics Analyst Intern</h3>
+                    <p class="text-slate-400 mt-2 font-sans text-sm leading-relaxed">
+                        Constructed system alignments and data modeling sequences tracking specific pangenome architectures, transcript variants, classification trends, and evolutionary cluster matrices.
+                    </p>
+                </div>
+
+                <div class="relative">
+                    <span class="absolute -left-[39px] top-0.5 w-4 h-4 bg-matrixGreen rounded-full border-4 border-obsidianDark"></span>
+                    <div class="flex justify-between items-center text-[10px] text-slate-500 mb-1">
+                        <span>APTLY PHARMA QA</span>
+                        <span>06/2025 - 07/2025</span>
+                    </div>
+                    <h3 class="text-base font-bold text-white font-mono">Aptly Pharmaceuticals — Quality Control & Microbiology Intern</h3>
+                    <p class="text-slate-400 mt-2 font-sans text-sm leading-relaxed">
+                        Executed comprehensive biological purity matrices, environmental safety assays, sterility tracking logs, and formal validation reporting for manufacturing compliance.
+                    </p>
+                </div>
+
+                <div class="relative">
+                    <span class="absolute -left-[39px] top-0.5 w-4 h-4 bg-matrixGreen rounded-full border-4 border-obsidianDark"></span>
+                    <div class="flex justify-between items-center text-[10px] text-slate-500 mb-1">
+                        <span>INFORMATIX LAB SYSTEMS</span>
+                        <span>02/2025 - 03/2025</span>
+                    </div>
+                    <h3 class="text-base font-bold text-white font-mono">Informatix Biolabs — Remote Bioinformatics Intern</h3>
+                    <p class="text-slate-400 mt-2 font-sans text-sm leading-relaxed">
+                        Calculated fine protein-ligand structural configurations, evaluating spatial matching parameters through tools including AlphaFold3, AutoDock arrays, and structural prediction validators.
+                    </p>
+                </div>
+
+                <div class="relative">
+                    <span class="absolute -left-[39px] top-0.5 w-4 h-4 bg-matrixGreen rounded-full border-4 border-obsidianDark"></span>
+                    <div class="flex justify-between items-center text-[10px] text-slate-500 mb-1">
+                        <span>AYUB RESEARCH LAB</span>
+                        <span>09/2024 - 10/2024</span>
+                    </div>
+                    <h3 class="text-base font-bold text-white font-mono">Ayub Agricultural Research Institute — Biotechnology Intern</h3>
+                    <p class="text-slate-400 mt-2 font-sans text-sm leading-relaxed">
+                        Extracted core sample genomic strands via wet CTAB configurations, validating material yields via spectrophotometry and evaluating target sequences using custom PCR thermal profiles.
+                    </p>
+                </div>
+
+                <div class="relative">
+                    <span class="absolute -left-[39px] top-0.5 w-4 h-4 bg-matrixGreen rounded-full border-4 border-obsidianDark"></span>
+                    <div class="flex justify-between items-center text-[10px] text-slate-500 mb-1">
+                        <span>FOUNDER & INSTRUCTOR</span>
+                        <span>2024 - Present</span>
+                    </div>
+                    <h3 class="text-base font-bold text-white font-mono">BioCode Innovators — Founder & Core Lead</h3>
+                    <p class="text-slate-400 mt-2 font-sans text-sm leading-relaxed">
+                        Established a dedicated educational initiative bridging the gap between biology and data tools. Curated content blueprints, held structural demonstrations, and mentored students through core computational steps. Guided peer metrics in structural prediction utilities including SWISS-MODEL, I-TASSER, and interaction studies via AutoDock Vina.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="py-24 border-t border-white/5 bg-black/20">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="mb-16 space-y-3 text-center">
+                <h2 class="font-mono text-xs uppercase text-matrixGreen tracking-widest">// ACADEMIC_FOUNDATION</h2>
+                <p class="font-mono text-2xl font-bold text-white">Education Track</p>
+            </div>
+
+            <div class="space-y-8 font-mono text-xs">
+                <div class="glass-charcoal p-6 rounded border border-white/5 group hover:border-matrixGreen/30 transition-all duration-300">
+                    <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-2 mb-4">
+                        <div>
+                            <span class="text-[10px] text-matrixGreen uppercase tracking-wider">// UNDERGRADUATE DEGREEE</span>
+                            <h3 class="text-lg font-bold text-white font-mono mt-0.5">Bachelor of Biotechnology</h3>
+                            <p class="text-slate-400 font-sans text-sm mt-1">Riphah International University, Faisalabad</p>
+                        </div>
+                        <div class="text-right sm:text-right text-[10px] text-slate-500">
+                            <span class="block text-white font-bold text-sm text-matrixGreen">GPA 3.95 / 4.00</span>
+                            <span>2021 - 2025</span>
+                        </div>
+                    </div>
+                    <p class="text-slate-400 font-sans text-xs leading-relaxed">
+                        Focused on molecular biochemistry, genomic computing workflows, and sterile laboratory applications. Developed an undergraduate thesis titled <b class="text-slate-300">"Practical Insights into Quality Control, Microbiology, and Veterinary Drug Production at Aptly Pharmaceuticals"</b> to evaluate systemic quality-assurance frameworks.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="glass-charcoal p-5 rounded border border-white/5">
+                        <div class="flex justify-between items-start text-[10px] mb-2">
+                            <span class="text-slate-500">HIGHER SECONDARY EDUCATION</span>
+                            <span class="text-matrixGreen font-bold">Score: 1030</span>
+                        </div>
+                        <h4 class="text-sm font-bold text-white">Intermediate in Pre-Medical</h4>
+                        <p class="text-slate-400 font-sans text-xs mt-1">Student's Inn Colleges, Faisalabad</p>
+                        <p class="text-slate-500 text-[10px] mt-2">Tenure: 2019 - 2021</p>
+                    </div>
+
+                    <div class="glass-charcoal p-5 rounded border border-white/5">
+                        <div class="flex justify-between items-start text-[10px] mb-2">
+                            <span class="text-slate-500">SECONDARY SCHOOL CERTIFICATE</span>
+                            <span class="text-matrixGreen font-bold">Score: 979</span>
+                        </div>
+                        <h4 class="text-sm font-bold text-white">High Secondary Matriculation</h4>
+                        <p class="text-slate-400 font-sans text-xs mt-1">Govt Al-Karim Girls High School</p>
+                        <p class="text-slate-500 text-[10px] mt-2">Tenure: 2017 - 2019</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="awards" class="py-24 border-t border-white/5 bg-black/10">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="max-w-xl mb-16 space-y-3">
+                <h2 class="font-mono text-xs uppercase text-matrixGreen tracking-widest">// RECOGNITIONS</h2>
+                <p class="font-mono text-2xl font-bold text-white">Honors & Achievements</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 font-mono text-xs">
+                <div class="glass-charcoal p-6 rounded border border-white/5 flex flex-col justify-between">
+                    <div>
+                        <i class="fa-solid fa-award text-matrixGreen text-xl mb-4"></i>
+                        <h4 class="text-white font-bold text-sm mb-1">Silver Medalist Award</h4>
+                        <p class="text-slate-500 text-[10px]">ACADEMIC DISTINCTION // 2026</p>
+                    </div>
+                    <p class="text-slate-400 mt-4 font-sans text-xs">Honored as an institutional Silver Medalist for stellar performance and scientific distinction during the graduation tenure.</p>
+                </div>
+
+                <div class="glass-charcoal p-6 rounded border border-white/5 flex flex-col justify-between">
+                    <div>
+                        <i class="fa-solid fa-graduation-cap text-matrixGreen text-xl mb-4"></i>
+                        <h4 class="text-white font-bold text-sm mb-1">Academic Excellence</h4>
+                        <p class="text-slate-500 text-[10px]">RIPHAH INTERNATIONAL UNIVERSITY</p>
+                    </div>
+                    <p class="text-slate-400 mt-4 font-sans text-xs">Achieved a top-tier CGPA score metric of 3.95 / 4.00 during the core Bachelor of Biotechnology degree.</p>
+                </div>
+
+                <div class="glass-charcoal p-6 rounded border border-white/5 flex flex-col justify-between">
+                    <div>
+                        <i class="fa-solid fa-star text-matrixGreen text-xl mb-4"></i>
+                        <h4 class="text-white font-bold text-sm mb-1">Talent Award Winner</h4>
+                        <p class="text-slate-500 text-[10px]">COMPETITIVE ASSESSMENT</p>
+                    </div>
+                    <p class="text-slate-400 mt-4 font-sans text-xs">Recognized as the primary assessment test winner, displaying exceptional logic and analytical capability.</p>
+                </div>
+
+                <div class="glass-charcoal p-6 rounded border border-white/5 flex flex-col justify-between">
+                    <div>
+                        <i class="fa-solid fa-circle-check text-matrixGreen text-xl mb-4"></i>
+                        <h4 class="text-white font-bold text-sm mb-1">Excellent Performance</h4>
+                        <p class="text-slate-500 text-[10px]">INSTITUTIONAL METRIC</p>
+                    </div>
+                    <p class="text-slate-400 mt-4 font-sans text-xs">Honored for consistent performance and technical excellence in academic research environments.</p>
+                </div>
+
+                <div class="glass-charcoal p-6 rounded border border-white/5 flex flex-col justify-between">
+                    <div>
+                        <i class="fa-solid fa-users text-matrixGreen text-xl mb-4"></i>
+                        <h4 class="text-white font-bold text-sm mb-1">Leadership Award</h4>
+                        <p class="text-slate-500 text-[10px]">COMMUNITY BLUEPRINT</p>
+                    </div>
+                    <p class="text-slate-400 mt-4 font-sans text-xs">Awarded for steering student training paradigms and establishing the BioCode Innovators infrastructure network.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-24 border-t border-white/5 relative">
+        <div class="max-w-4xl mx-auto px-6 text-center space-y-8">
+            <div class="space-y-3">
+                <h2 class="font-mono text-xs uppercase text-matrixGreen tracking-widest">// CONNECT_INTERFACE</h2>
+                <p class="font-mono text-3xl font-bold text-white">Initialize Communication</p>
+                <p class="text-slate-400 max-w-md mx-auto text-sm font-sans">
+                    Open for academic research partnerships, collaborative bioinformatics pipelines, and structural tool development workflows.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 font-mono text-xs max-w-2xl mx-auto pt-4">
+                <a href="mailto:iftikharabeera100@gmail.com" class="glass-charcoal p-4 rounded border border-white/5 hover:border-matrixGreen/30 transition-all duration-300 group">
+                    <i class="fa-solid fa-envelope text-matrixGreen text-lg mb-2 block group-hover:scale-110 transition-transform"></i>
+                    <span class="text-slate-400 block mb-1">Secure Mail</span>
+                    <span class="text-white font-bold text-[11px] break-all">iftikharabeera100@gmail.com</span>
+                </a>
+
+                <a href="https://www.linkedin.com/in/abeeraiftikhar" target="_blank" class="glass-charcoal p-4 rounded border border-white/5 hover:border-matrixGreen/30 transition-all duration-300 group">
+                    <i class="fa-brands fa-linkedin text-matrixGreen text-lg mb-2 block group-hover:scale-110 transition-transform"></i>
+                    <span class="text-slate-400 block mb-1">LinkedIn Index</span>
+                    <span class="text-white font-bold text-[11px]">in/abeeraiftikhar</span>
+                </a>
+
+                <a href="https://github.com/Abeeraiftikhar" target="_blank" class="glass-charcoal p-4 rounded border border-white/5 hover:border-matrixGreen/30 transition-all duration-300 group">
+                    <i class="fa-brands fa-github text-matrixGreen text-lg mb-2 block group-hover:scale-110 transition-transform"></i>
+                    <span class="text-slate-400 block mb-1">Remote Repositories</span>
+                    <span class="text-white font-bold text-[11px]">github.com/Abeeraiftikhar</span>
+                </a>
+            </div>
+
+            <p class="text-[10px] font-mono text-slate-600 pt-12">
+                &copy; 2026 Abeera Iftikhar. Built with Tailwind CSS. All rights reserved.
+            </p>
+        </div>
+    </section>
+
+    <script>
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html>
