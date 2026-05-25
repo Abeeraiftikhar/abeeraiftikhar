@@ -27,4 +27,5 @@ I am a computational researcher, biotechnology graduate, Silver Medalist, and th
 - Gel Electrophoresis, microbial isolation, and manufacturing compliance validation (sterility tracking matrices).
 
 🌐 Live: https:https://abeeraiftikhar.github.io/my-portfolio/
+
 📧 iftikharabeera100@gmail.com
